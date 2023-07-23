@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #845EC2, #D65DB1);
+    padding: 10px;
+}
+
+/* Todo Container (Master) */
+.todo-box{
+    width: 100%;
+    max-width: 540px;
+    max-height: 450px;
+    background-color: rgba(256, 256, 256, 0.81);
+    margin: 100px auto 30px;
+    padding: 30px 30px 30px;
+    border-radius: 10px;
+    border: 5px solid #FBEAFF;
+    position: relative;
+}
+
+/* Todo Icon */
+.todo-box  img{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 50px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+/* Todo Title and Count */
+.todo-box .title{
+    color: #7c49ce;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.todo-box span{
+    color: #B39CD0;
+}
+.todo-box span #count{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todo-box .bad{
+    color: red;
+}
+.todo-box .good{
+    color: #008F7A;
+}
+.todo-box .nice{
+    color: #0089BA;
+}
+
+.todo-box span #clear{
+    color: #ff4455;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.todo-box span #clear:hover{
+    color: #fff;
+    background: #ff4455;
+    
+    box-shadow: 1px 1px 2px #333;
+}
+
+/* Input and Add */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a877f6;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+
+.row input{
+    flex: 1;
+    padding: 12px;
+    padding-left: 20px;
+    border-radius: 30px 0 0 30px;
+    font-weight: 600;
+
+}
+
+.row button{
+    padding: 16px 36px;
+    color: #fff;
+    background-color: #7c49ce;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* list items */
+#list-items{
+    width: 100%;
+    max-height: 250px;
+    overflow-y: scroll;
+    /* background-color: #0089BA; */
+    
+}
+
+#list-items::-webkit-scrollbar{
+    visibility: hidden;
+}
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: url('pics/unchecked.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked::before{
+    background: url('pics/checked.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li input{
+    font-size: 18px;
+    padding: 7px 8px 7px 10px;
+    width: 70%;
+    margin-left:50px;
+    background: transparent;
+
+}
+
+ul li.checked input{
+    color: #666;
+    text-decoration: line-through;
+}
+
+ul li .editMode{
+    border-bottom: 2px solid #00C9A7;
+    color: #00C9A7;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+ul li div{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 80px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+ul li div span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    
+}
+
+ul li div span.edit{
+    background: url('pics/edit.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li div span.del{
+    background: url('pics/delete.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li div span.del:hover{
+    background: url('pics/deleteAct.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+   
