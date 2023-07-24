@@ -1,3 +1,5 @@
+// Developed by SPD, 24 JUL 2023
+
 // elements
 
 const count = document.querySelector('#count');
