@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM-Intership</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+
+        .wrapper{
+            min-height: 100vh;
+            width: 100%;
+
+            background: #DA4453;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h1{
+            color: #fcf7f7;
+            text-shadow: 4px 4px 2px #212121;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            /* font-family:'Righteous', cursive; */
+            font-family: 'Pacifico', cursive;
+        }
+
+        p{
+            padding:10px 30px;
+            /* border-bottom: 4px dashed white; */
+            background-color: #f2f2f2;
+            font-size: 1.5em;
+            color: #222;
+            /* font-family: 'Pacifico', cursive; */
+            font-family:'Righteous', cursive;
+
+        }
+
+        .container{
+            height: auto;
+            width: 100%;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container a{
+            text-decoration: none;
+        }
+
+        .card{
+            height: max-content;
+            width: 350px;
+            background-color: rgba(33,33,33,0.8);
+            border-radius: 30px;
+            overflow: hidden;
+            padding-bottom: 20px ;
+            color: #fbfefe;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .card img{
+            width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .card:hover{
+            border-right: 3px solid #333;
+            border-bottom: 3px solid #333;
+            box-shadow: 4px 4px 5px #f2f2ed;
+        }
+
+
+    </style>
+<body>
+    <div class="wrapper">
+        <h1>Lets Grow More Intership</h1>
+        <p>August 2023 Batch</p>
+
+        <div class="container">
+            <a href="Task-1/index.html">
+            <div class="card">
+                <img src="imgs/task1.png" alt="todo-app">
+                <h3>Task-1 &gt;&gt; <span>TODO WebApp</span></h3>
+            </div>
+            </a>
+
+            <!-- <a href="Task-1/index.html">
+                <div class="card">
+                    <img src="imgs/task1.png" alt="todo-app">
+                    <h3>Task-1 &gt;&gt; <span>TODO WebApp</span></h3>
+                </div>
+            </a> -->
+
+           
+
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -65,13 +65,13 @@ function addTask(){
 }
 
 function clearAll(){
-    // clear data
-    container.innerHTML = '';
-    updateData();
-
     //reset count
     taskCount = 0;
     updateCount();
+
+    // clear data
+    container.innerHTML = '';
+    updateData();
 }
 
 // clear All
