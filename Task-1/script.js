@@ -125,14 +125,16 @@ container.addEventListener('click', (e)=>{
                 inp.removeAttribute("readonly");
                 inp.classList.add('editMode');
                 inp.focus();
-                li.classList.remove("checked");
+                if(li.classList.contains("checked")){
+
+                    li.classList.remove("checked");
+                    //keeping count
+                    taskCount += 1;
+                    updateCount();
+                }
     
                 e.target.style.background = "url(pics/editAct.png)";
                 e.target.style.backgroundSize = "cover";
-    
-                //keeping count
-                taskCount += 1;
-                updateCount();
     
             }else{
                 inp.setAttribute("readonly", true);
@@ -163,6 +165,7 @@ function updateData(){
 function fetchData(){
     container.innerHTML = localStorage.getItem("list");
     count.innerHTML = localStorage.getItem("count");
+    taskCount = localStorage.getItem("count");
 }
 
 // gather all previous data
