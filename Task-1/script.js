@@ -166,8 +166,12 @@ function updateData(){
 
 function fetchData(){
     container.innerHTML = localStorage.getItem("list");
-    count.innerHTML = localStorage.getItem("count");
     taskCount = parseInt(localStorage.getItem("count"));
+
+        if(Number.isNaN(taskCount)){
+            taskCount = 0;
+        }
+    count.innerHTML = taskCount;
 }
 
 // gather all previous data
