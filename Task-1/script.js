@@ -167,7 +167,7 @@ function updateData(){
 function fetchData(){
     container.innerHTML = localStorage.getItem("list");
     count.innerHTML = localStorage.getItem("count");
-    taskCount = localStorage.getItem("count");
+    taskCount = parseInt(localStorage.getItem("count"));
 }
 
 // gather all previous data
