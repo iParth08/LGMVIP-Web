@@ -61,7 +61,7 @@ function nextEnroll(){
     desc.innerHTML =
     `<p>${person.value}</p>  
     <p>${gender}</p>
-    <a href="mailto:${email.value}">${email.value}</a>
+    <a href="mailto:${email.value}">${email.value}</a><br />
     <a href="${website.value}" target="_blank">${website.value}</a>
     <p>${skill_set}</p>
     `;
