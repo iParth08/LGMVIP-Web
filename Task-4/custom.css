@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&family=Special+Elite&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #edf1f4;
+
+    
+}
+
+/* .wrapper .title{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #2d2d31;
+    text-shadow: 3px 3px 2px #de3f3fc2;
+    font-family: 'Special Elite', cursive;
+
+    position: absolute;
+    top: calc(50% - 0px);
+    left:60px;
+    transform: rotate(-60deg);
+} */
+
+
+.container{
+    position: relative; 
+    height: auto;
+    width: 400px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
+                -15px -15px 20px #fffb;
+    
+
+}
+.container .inp{
+    height: 100px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+    border-radius: 15px;
+    font-family: 'Special Elite', cursive;
+
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+                inset -5px -5px 10px #fff;
+}
+.container .inp .previous{
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+    gap: 6px;
+    padding-right: 20px;
+    font-size: 30px;
+    color: #5166d6;
+}
+.container .inp .current{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: end;
+    padding-right: 20px;
+    font-size: 25px;
+    font-weight: bolder; 
+    color: #1c1f1c;
+}
+
+.container .buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* flex-direction: column; */
+}
+
+.container .buttons span{
+    display: block;
+    min-width: 50px;
+    padding: 20px;
+    margin: 8px;
+    font-size: 1.2em;
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    color: #666;
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.2),
+                 -5px -5px 10px #fff;
+
+}
+
+.container .buttons span:active{
+    box-shadow:  inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 10px #fff;
+    color: #f44336; 
+}
+
+.container .buttons span#clear{
+    grid-column: span 2;
+    border: 2px solid #fff;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.container .buttons span#add{
+    grid-row: span 2;
+    border: 2px solid #fff;
+    background-color: #31a935;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.container .buttons span#equal{
+    border: 2px solid #fff;
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container .buttons span#back{
+    grid-column: span 2;
+    border: 2px solid #fff;
+    background-color: #2b2625;
+    color: #fff;
+}
+
+
+/* -----customs------ */
+.container .inp .shadow{
+    color: #878787;
+} 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-title"><h1>Student Enrollment Form</h1></div>
+    <div class="wrapper">
+        
+        <form class="form-field" onsubmit="event.preventDefault();" autocomplete="off">
+            <span>
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name"  placeholder="Full Name" />
+            </span>
+            <span>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email" />
+            </span>
+            <span>
+                <label for="website">Website</label>
+                <input type="url" name="website" id="website" placeholder="website link"/>
+            </span>
+            <span>
+                <label for="profile">image-link</label>
+            <input type="url" name="profile" id="profile" placeholder="Profile image-link" />
+            </span>
+            
+            <span id="gender-select">
+                <label>Gender</label>
+                <div>
+                    <span>
+                        <input type="radio" id="male" name="gender" value="Male" />
+                        <label for="gender" id="gen">Male</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="female" name="gender" value="Female"/>
+                        <label for="Gender" id="gen">Female</label>
+                    </span>
+                </div>  
+            </span>
+
+            <span class="skills">
+                <label for="skill">Skills</label>
+                <span>
+                    <input type="checkbox" id="html" name="html" value="HTML5" class="tick">
+                    <label for="html">HTML5</label>
+                    <input type="checkbox" id="css" name="css" value="CSS3" class="tick">
+                    <label for="css">CSS3</label>
+                    <input type="checkbox" id="javaS" name="Javascript" value="JavaScript" class="tick">
+                    <label for="Javascript">JavaScript</label>
+                </span>
+            </span>
+            
+            <span class="buttons">
+                <button id="enroll" onclick="nextEnroll()" type="submit">Enroll Student</button>
+                <button id="reset" type="reset">Clear</button>
+            </span>
+
+        </form>
+
+        <span id="rule"></span>
+        <!-- display here -->
+        <div class="registered">
+            <h2>Enrolled Students</h2>
+            <div class="table">
+                <div class="row head-row">
+                    <div class="desc-head">Description</div>
+                    <div class="image-head">Image</div>
+                </div>
+                <!-- 
+                <div class="row">
+                    <div class="desc-col">
+                       <p>Krishna Vasudev</p>  
+                       <p>Male</p>
+                       <a href="mailto:krish.shwetprakash08@gmail.com">krish.shwetprakash08@gmail.com</a>
+                       <a href="https://iparth08.github.io/LGMVIP-Web/" target="_blank">https://iparth08.github.io/LGMVIP-Web/</a>
+                       <p>JavaScript HTML</p>
+                    </div>
+                    <div class="image-col">
+                        <img src="https://t3.ftcdn.net/jpg/05/15/63/82/360_F_515638234_Leo0UBEay0ozXWnObkkxLRNJXM9xhdWG.jpg" alt="krishna">
+                    </div>
+                </div>
+                 -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
